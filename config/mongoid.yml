@@ -134,11 +134,13 @@ test:
           mode: primary
         max_pool_size: 1
 production:
-  clients:
-    default:
-      database: yellow_cab_production
-      uri: <%= ENV['MONGOLAB_URI'] %>
-      options:
-        consistency: :strong
-        max_retries: 1
-        retry_interval: 0
+ sessions:
+   default:
+     uri: <%= ENV['MONGOLAB_URI'] %>
+     options:
+       consistency: :strong
+       max_retries: 30
+       retry_interval: 1
+       timeout: 15
+       safe: true
+       refresh_interval: 10
