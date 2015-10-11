@@ -20,6 +20,7 @@ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'mongoid-rspec'
   gem "codeclimate-test-reporter", require: nil
+  gem 'shoulda-matchers'
 end
 
 group :production do
