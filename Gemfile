@@ -5,6 +5,8 @@ ruby '2.1.2'
 gem 'rails', '4.1.8'
 gem 'mongoid', '~> 5.0.0'
 gem 'mongoid-geospatial'
+gem 'newrelic_rpm'
+
 # API
 gem 'rails-api'
 gem 'grape'

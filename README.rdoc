@@ -3,3 +3,4 @@
 Demo :: https://yellow-cab.herokuapp.com/api
 Code quality :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/gpa.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab]
 Test Coverage :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/coverage.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab/coverage]
+CodeShip :: {<img src="https://codeship.com/projects/7eec1f00-51ed-0133-a2a6-3289b2b41ce8/status?branch=master" alt="Status?branch=master" />}[https://codeship.com/projects/108013]

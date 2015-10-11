@@ -89,6 +89,7 @@ GEM
       rspec (~> 3.3)
     multi_json (1.11.2)
     multi_xml (0.5.5)
+    newrelic_rpm (3.11.1.284)
     origin (2.1.1)
     pry (0.10.2)
       coderay (~> 1.1.0)
@@ -184,6 +185,7 @@ DEPENDENCIES
   mongoid (~> 5.0.0)
   mongoid-geospatial
   mongoid-rspec
+  newrelic_rpm
   pry
   pry-byebug
   rails (= 4.1.8)
