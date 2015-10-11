@@ -81,6 +81,8 @@ GEM
       mongo (~> 2.1)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-geospatial (5.0.0)
+      mongoid (>= 5.0.0.beta)
     mongoid-rspec (3.0.0)
       mongoid (~> 5.0)
       rake
@@ -178,6 +180,7 @@ DEPENDENCIES
   faker
   grape
   mongoid (~> 5.0.0)
+  mongoid-geospatial
   mongoid-rspec
   pry
   pry-byebug
