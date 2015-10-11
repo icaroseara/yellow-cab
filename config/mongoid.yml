@@ -137,7 +137,7 @@ production:
   clients:
     default:
       database: yellow_cab_production
-      uri: <%= ENV['MONGOHQ_URL'] %>
+      uri: <%= ENV['MONGOLAB_URI'] %>
       options:
         consistency: :strong
         max_retries: 1
