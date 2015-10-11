@@ -1,4 +1,5 @@
-== Yellow Cab
+= Yellow Cab
   
-* Demo
- The demo application is available at: https://yellow-cab.herokuapp.com/api
+Demo :: https://yellow-cab.herokuapp.com/api
+Code quality :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/gpa.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab]
+Test Coverage :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/coverage.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab/coverage]
