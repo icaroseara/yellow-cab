@@ -19,3 +19,7 @@ group :test do
   gem 'mongoid-rspec'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+

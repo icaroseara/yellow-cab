@@ -133,3 +133,12 @@ test:
         read:
           mode: primary
         max_pool_size: 1
+production:
+  clients:
+    default:
+      database: yellow_cab_production
+      uri: <%= ENV['MONGOHQ_URL'] %>
+      options:
+        consistency: :strong
+        max_retries: 1
+        retry_interval: 0
