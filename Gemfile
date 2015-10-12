@@ -22,6 +22,7 @@ group :test do
   gem 'mongoid-rspec'
   gem "codeclimate-test-reporter", require: nil
   gem 'shoulda-matchers'
+  gem 'database_cleaner', git: 'https://github.com/DatabaseCleaner/database_cleaner.git'
 end
 
 group :production do

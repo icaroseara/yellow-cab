@@ -8,12 +8,19 @@ class DriverStatus
   index({location: "2d"})
 
   belongs_to :driver
-  
+    
   def lat
     location.last
   end
   
   def lng
     location.first
+  end
+  
+  class << self
+    def in_area sw, ne
+      where(location: {"$within" => {"$box" =>  [sw, ne] }})
+      .where(available: true)
+    end
   end
 end
