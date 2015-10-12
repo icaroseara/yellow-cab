@@ -6,7 +6,7 @@ RSpec.describe Driver, type: :model do
   context 'validations' do
     it { expect(validate_presence_of(:name))}
     it { expect(validate_presence_of(:car_plate))} 
-    it { expect(validate_presence_of(:available))} 
+    it { expect(validate_uniqueness_of(:car_plate))}
   end
   
   context 'associations' do
