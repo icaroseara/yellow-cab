@@ -1,6 +1,20 @@
 = Yellow Cab
-  
-Demo :: https://yellow-cab.herokuapp.com/api
 Code quality :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/gpa.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab]
 Test Coverage :: {<img src="https://codeclimate.com/github/icaroseara/yellow-cab/badges/coverage.svg" />}[https://codeclimate.com/github/icaroseara/yellow-cab/coverage]
 CodeShip :: {<img src="https://codeship.com/projects/7eec1f00-51ed-0133-a2a6-3289b2b41ce8/status?branch=master" alt="Status?branch=master" />}[https://codeship.com/projects/108013]
+
+
+== API URL 
+[https://yellow-cab.herokuapp.com/api]
+
+== Update current position and availability of a driver
+$ curl -d '{"lat":"-23.60810717","lng":"-46.67500346","driver_id": "561af32b7c2641c235000001","available":true}' -H "Accept: application/vnd.yellow-cab-v1+json" -X POST https://yellow-cab.herokuapp.com/api/drivers
+
+== Create a driver
+$ curl -d '{ "name": "Name", "car-plate": "AMO-2015"}' -H "Accept: application/vnd.yellow-cab-v1+json" -X POST https://yellow-cab.herokuapp.com/api/drivers
+
+== List of active drivers within a specific area.
+$ curl -d '{ "sw": "-23.612474,-46.702746", "ne": "-23.589548,-46.673392"}' -H "Accept: application/vnd.yellow-cab-v1+json" -X GET https://yellow-cab.herokuapp.com/api/drivers
+
+== Get driver status
+$ curl -H "Accept: application/vnd.yellow-cab-v1+json" -X GET https://yellow-cab.herokuapp.com/api/drivers/:id/status

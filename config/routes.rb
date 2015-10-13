@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  #mount YellowCab::API => '/'
   mount API => '/'
+  mount GrapeSwaggerRails::Engine => '/apidoc'
 end
