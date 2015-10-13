@@ -10,8 +10,6 @@ gem 'newrelic_rpm'
 gem 'rails-api'
 gem 'grape'
 gem 'grape-entity', '~> 0.4.0'
-gem 'grape-swagger', '~> 0.7.2'
-gem 'grape-swagger-rails',  '~> 0.0.8'
 
 group :development, :test do
   gem 'pry'
